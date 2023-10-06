@@ -5,16 +5,16 @@ public class Main {
         if(grade >= 90) {
             return 'A';
         }
-        if(grade >= 80 && grade <= 89) {
+        if(grade >= 80) {
             return 'B';
         }
-        if(grade >= 70 && grade <= 79) {
+        if(grade >= 70) {
             return 'C';
         }
-        if(grade >= 60 && grade <= 69) {
+        if(grade >= 60) {
             return 'D';
         }
-        if(grade >= 50 && grade <= 59) {
+        if(grade >= 50) {
             return 'E';
         }
         return 'F';
@@ -66,8 +66,7 @@ public class Main {
     // Question 5 - endUp
     public static String endUp(String str) {
         if(str.length() <= 3) {
-            String upperStr = str.toUpperCase();
-            return upperStr;
+            return str.toUpperCase();
         }
         String lastThreeChar = str.substring(str.length()-3);
         String upperStr = lastThreeChar.toUpperCase();
